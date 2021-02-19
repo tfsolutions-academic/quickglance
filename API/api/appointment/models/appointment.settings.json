@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "name": "appointment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "appointment_status": {
+      "model": "appointment-status"
+    },
+    "patient": {
+      "model": "patient"
+    },
+    "staff_entity": {
+      "model": "staffentity"
+    },
+    "start_dt": {
+      "type": "datetime"
+    },
+    "end_dt": {
+      "type": "datetime"
+    },
+    "notes": {
+      "type": "richtext"
+    }
+  }
+}

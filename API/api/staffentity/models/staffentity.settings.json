@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staffentities",
+  "info": {
+    "name": "staff_entity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "bisexual"
+      ]
+    },
+    "staff_category": {
+      "model": "staff-category"
+    },
+    "staff_patient_associations": {
+      "via": "staff_entity",
+      "collection": "staff-patient-association"
+    }
+  }
+}

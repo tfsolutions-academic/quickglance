@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_patient_associations",
+  "info": {
+    "name": "staff_patient_association"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "staff_entity": {
+      "model": "staffentity",
+      "via": "staff_patient_associations"
+    },
+    "patient": {
+      "model": "patient",
+      "via": "staff_patient_associations"
+    },
+    "start_dt": {
+      "type": "date"
+    },
+    "end_dt": {
+      "type": "date"
+    }
+  }
+}

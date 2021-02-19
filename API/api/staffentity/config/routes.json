@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/staffentities",
+      "handler": "staffentity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staffentities/count",
+      "handler": "staffentity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staffentities/:id",
+      "handler": "staffentity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/staffentities",
+      "handler": "staffentity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/staffentities/:id",
+      "handler": "staffentity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/staffentities/:id",
+      "handler": "staffentity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

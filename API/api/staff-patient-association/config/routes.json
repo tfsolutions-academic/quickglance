@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/staff-patient-associations",
+      "handler": "staff-patient-association.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staff-patient-associations/count",
+      "handler": "staff-patient-association.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staff-patient-associations/:id",
+      "handler": "staff-patient-association.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/staff-patient-associations",
+      "handler": "staff-patient-association.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/staff-patient-associations/:id",
+      "handler": "staff-patient-association.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/staff-patient-associations/:id",
+      "handler": "staff-patient-association.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

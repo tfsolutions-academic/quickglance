@@ -1,0 +1,11 @@
+Database
+---------------------------------------
+DB Name : tfsolutions_quickglance
+User : quickglanceadmin
+Password : pass!23word
+
+Starpi
+---------------------------------------
+-- Admin
+FName: teamforward  LName: in
+Email: teamforward.in@gmail.com  P: quickglance@2020

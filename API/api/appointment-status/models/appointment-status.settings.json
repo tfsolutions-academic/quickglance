@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointment_statuses",
+  "info": {
+    "name": "appointment_status",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "enumeration",
+      "enum": [
+        "scheduled",
+        "cancelled"
+      ]
+    }
+  }
+}

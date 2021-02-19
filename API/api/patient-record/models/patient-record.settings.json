@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patient_records",
+  "info": {
+    "name": "patient_record"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "patient": {
+      "model": "patient",
+      "via": "patient_records"
+    },
+    "record_entity": {
+      "model": "record-entity",
+      "via": "patient_records"
+    },
+    "staff_entity": {
+      "model": "staffentity"
+    },
+    "updated_dt": {
+      "type": "datetime"
+    }
+  }
+}

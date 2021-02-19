@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/record-entities",
+      "handler": "record-entity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/record-entities/count",
+      "handler": "record-entity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/record-entities/:id",
+      "handler": "record-entity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/record-entities",
+      "handler": "record-entity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/record-entities/:id",
+      "handler": "record-entity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/record-entities/:id",
+      "handler": "record-entity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

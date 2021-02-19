@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_categories",
+  "info": {
+    "name": "staff_category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "code": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

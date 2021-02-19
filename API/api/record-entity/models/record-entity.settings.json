@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "record_entities",
+  "info": {
+    "name": "record_entity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "enumeration",
+      "enum": [
+        "Admission",
+        "Diagnosis",
+        "Medication"
+      ]
+    },
+    "patient_records": {
+      "via": "record_entity",
+      "collection": "patient-record"
+    }
+  }
+}

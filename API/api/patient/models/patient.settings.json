@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "name": "patient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "primary_contact": {
+      "type": "string",
+      "required": true
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "bisexual"
+      ]
+    },
+    "dob": {
+      "type": "date"
+    },
+    "staff_patient_associations": {
+      "via": "patient",
+      "collection": "staff-patient-association"
+    },
+    "patient_records": {
+      "via": "patient",
+      "collection": "patient-record"
+    }
+  }
+}
