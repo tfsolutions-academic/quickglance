@@ -48,7 +48,7 @@ const Login = (props) => {
                                             rules={{ required: true }} 
                                             control={control} 
                                             className="p-d-block"
-                                            defaultValue="nat@proserve.com" />
+                                            defaultValue="doc@quickglance.com" />
                             <small id="username1-help" className="p-d-block">Enter your username.</small>
                         </div>
                         <div className="p-field">
