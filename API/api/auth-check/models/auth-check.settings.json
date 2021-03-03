@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "auth_checks",
+  "info": {
+    "name": "Auth_check"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Success": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

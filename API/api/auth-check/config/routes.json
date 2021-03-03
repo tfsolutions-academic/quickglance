@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/auth-check",
+      "handler": "auth-check.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/auth-check",
+      "handler": "auth-check.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/auth-check",
+      "handler": "auth-check.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
